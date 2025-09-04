@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: app1
-          image: fastapi-app1:latest
+          image: fastapi-app1:1
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8001
 ---
